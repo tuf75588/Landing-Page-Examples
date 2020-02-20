@@ -145,6 +145,11 @@ nav a:hover {
   position: relative;
 }
 
+.grid-carousel__item {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
 .grid-carousel__item:nth-of-type(1) {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -175,6 +180,19 @@ nav a:hover {
           order: 5;
 }
 
+.grid-carousel__item.featured {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.grid-carousel__caption {
+  opacity: 0;
+}
+
+.grid-carousel__item.featured .grid-carousel__caption {
+  opacity: 1;
+}
+
 .grid-carousel__button {
   all: unset;
   padding: 0.5em;
@@ -195,6 +213,7 @@ nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .grid-carousel::before {

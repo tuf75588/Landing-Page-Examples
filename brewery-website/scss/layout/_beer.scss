@@ -12,8 +12,19 @@
 
   &__item {
     @include applyOrder(5);
+    transform: scale(0.7);
+
+    &.featured {
+      transform: scale(1);
+    }
   }
 
+  &__caption {
+    opacity: 0;
+  }
+  &__item.featured &__caption {
+    opacity: 1;
+  }
   &__button {
     all: unset;
     padding: 0.5em;
@@ -34,6 +45,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 10;
   }
   &::before {
     grid-column: 2 / 4;
