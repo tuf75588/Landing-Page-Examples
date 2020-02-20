@@ -10,9 +10,18 @@
   margin: 3em auto;
   position: relative;
 
+  &__item {
+    @include applyOrder(5);
+  }
+
   &__button {
     all: unset;
     padding: 0.5em;
+    cursor: pointer;
+    // always make sure right button is last in order.
+    &:last-of-type {
+      order: 99;
+    }
   }
 
   &::before,
