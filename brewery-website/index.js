@@ -16,9 +16,8 @@ function getOrder(elem) {
 }
 
 function handleLeftClick() {
-  carouselItem.forEach((node, index) => {
+  carouselItem.forEach(node => {
     let order = getOrder(node);
-    console.log(carouselItem);
     if (order < carouselItem.length) {
       node.style.order = order += 1;
     } else {
