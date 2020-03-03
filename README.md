@@ -6,3 +6,8 @@ of emerging css technologies and responsive web design, with an emphasis on acce
 ---
 
 Sites will be listed as they are completed with links to live deployments.
+
+---
+
+1. Mock Brewery Website
+2. Microsoft homepage recreation

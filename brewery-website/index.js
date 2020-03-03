@@ -3,6 +3,7 @@ const leftArrow = carousel.querySelector(".js-left");
 const rightArrow = carousel.querySelector(".js-right");
 const carouselItem = carousel.querySelectorAll(".grid-carousel__item");
 const captions = carousel.querySelectorAll("figcaption.grid-carousel__caption");
+
 function toggleFeatured(item, order) {
   // handling the toggle of a css class.
   return order === 3
@@ -21,9 +22,9 @@ function handleLeftClick() {
     if (order < carouselItem.length) {
       node.style.order = order += 1;
     } else {
-      node.style.order = 1;
     }
     toggleFeatured(node, order);
+    node.style.order = 1;
   });
 }
 

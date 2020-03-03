@@ -180,4 +180,35 @@ ul {
 .hero p {
   font-size: 15px;
   white-space: normal;
+  padding-bottom: 20px;
+}
+
+.btn-whale {
+  background: #fff;
+  color: #262626;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.social-media img {
+  margin: 0 5px;
+}
+
+.ending-footer {
+  margin-top: 48px;
+  background: #f2f2f2;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.ending-footer .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
