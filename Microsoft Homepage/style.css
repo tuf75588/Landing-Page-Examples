@@ -202,13 +202,25 @@ ul {
 .ending-footer {
   margin-top: 48px;
   background: #f2f2f2;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
 }
 
 .ending-footer .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  margin: 40px;
+  padding: 0 20px;
+}
+.ending-footer .item .heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ending-footer .item ul li {
+  padding: 10px 0;
+  font-size: 11px;
+  line-height: 16px;
 }
