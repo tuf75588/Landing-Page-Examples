@@ -5,7 +5,6 @@ const carouselItem = carousel.querySelectorAll(".grid-carousel__item");
 const captions = carousel.querySelectorAll("figcaption.grid-carousel__caption");
 
 function toggleFeatured(item, order) {
-  // handling the toggle of a css class.
   return order === 3
     ? item.classList.add("featured")
     : item.classList.remove("featured");

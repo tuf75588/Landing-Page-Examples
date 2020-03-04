@@ -11,3 +11,4 @@ Sites will be listed as they are completed with links to live deployments.
 
 1. Mock Brewery Website
 2. Microsoft homepage recreation
+
